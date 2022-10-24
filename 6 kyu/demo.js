@@ -1,18 +1,8 @@
-var s = "The sunset sets at twelve o' clock.";
-var alphabet = "abcdefghijklmnopqrstuvwxyz".split("")
+let n = 39;
+while (n > 10) {
+  n = Array.from(String(n), Number).reduce((a, b) => a * b);
+}
 
-console.log(s)
+console.log(n);
 
-console.log( 
-    
-    s.toLowerCase()
-    .replace(/[^a-z]/g,'')
-    .split("")
-    .map((letter) => alphabet.indexOf(letter) + 1)
-    .join(" ")
-   
-
-
-)
-
-
+console.log(`${n}` == n.toString())
