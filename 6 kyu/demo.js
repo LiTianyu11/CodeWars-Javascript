@@ -1,8 +1,10 @@
-let n = 39;
-while (n > 10) {
-  n = Array.from(String(n), Number).reduce((a, b) => a * b);
+function order(words) {
+  return words
+    .split(" ")
+    .sort((a, b) => a.match(/\d/) - b.match(/\d/))
+
+    .join(" ");
 }
 
-console.log(n);
 
-console.log(`${n}` == n.toString())
+console.log("is2".match(/\d/) - "is3".match(/\d/))
